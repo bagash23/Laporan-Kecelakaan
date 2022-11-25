@@ -3,11 +3,10 @@ package com.bagas.laporankecelakaan.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class OtpRequest {
+class OtpResponse {
 
-    @SerializedName("verification_code")
+    @SerializedName("message")
     @Expose
-    var verification_code: String?=null
-
+    var message : String?=""
 
 }

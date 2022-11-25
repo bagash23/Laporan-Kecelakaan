@@ -110,6 +110,7 @@ class DaftarActivity : AppCompatActivity() {
                     }
 
                     override fun onFailure(call: Call<UserDaftarResponse>, t: Throwable) {
+                        progressDialog.dismiss()
                         Toast.makeText(this@DaftarActivity, "Faild"+t.message, Toast.LENGTH_LONG).show()
                     }
                 })
